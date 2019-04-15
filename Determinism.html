@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="focus-theme/dist/css/theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default"></script>
+    <title>Determinism</title>
+</head>
+
+<body>
+
+    <header class="site-header  bg-black border-bottom border-dark">
+        <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
+        <div class="container">
+
+           
+            <nav class="navbar main-nav navbar-expand-lg navbar-dark" aria-label="Main navigation"><a href="index.html" class="navbar-brand d-inline-flex text-uppercase">CHAOS<em class="material-icons ml-2" aria-hidden="true">donut_large</em></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                   
+                </button>
+				
+                <div class="collapse navbar-collapse text-uppercase" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="What is Chaos.html" class="nav-link">What is Chaos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Determinism.html" class="nav-link">Determinism?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Not Chaotic Chaos.html" class="nav-link">Not Chaotic Chaos</a>
+                        </li>
+                    </ul>
+                </div>
+			</nav>
+			
+        </div>
+				
+    </header>
+
+    <main id="content">
+
+        <!-- Article -->
+        <div class="container py-6">
+			
+            <div class="">
+                <div class="col-lg-8">
+                  <h1>Determinism?</h1>
+                  <hr class="border-1 border-light my-4 ml-0 text-left w-15" role="presentation">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-black"> 
+            <div class="container py-3">
+                <div class="bg-white mt-n6 px-4 px-lg-0">
+                    <div class="row justify-content-center py-4 py-lg-5">
+                        <div class="col-md-12 col-lg-11">
+                          <div class="row">
+								<div class="col-sm">
+									<figure class="figure mt-2">
+                                		<img src="Images/872px-Pierre_Simon,_Marquis_de_Laplace._Stipple_engraving_by_J._Po_Wellcome_M0006372.jpg" class="img-fluid" alt="Phase Space of a Simple Harmonic Pendulum">
+									</figure>
+								</div>
+								<div class="col-sm">
+									<figure class="figure mt-2">
+                                		<img src="Images/Demon.jpg" class="img-fluid" alt="Phase Space of a Simple Harmonic Pendulum">
+									</figure>
+								</div>
+								
+							</div>
+						  <blockquote class="blockquote my-4">
+                            <p class="font-italic">We may regard the present state of the universe as the effect of its past and the cause of its future. An intellect which at a certain moment would know all forces that set nature in motion, and all positions of all items of which nature is composed, if this intellect were also vast enough to submit these data to analysis, it would embrace in a single formula the movements of the greatest bodies of the universe and those of the tiniest atom; for such an intellect nothing would be uncertain and the future just like the past would be present before its eyes.</p>
+                              <footer class="blockquote-footer"> <i>A Philosophical Essay on Probabilities</i> by Laplace</footer>
+                          </blockquote>
+							<p> Pierre-Simon Laplace was a French scholar in the 18th century whose work contributed significantly to the development of engineering, mathematics and physics at that time. He was often referred to as the "French Netwon" during that period of time. Similar to Newton and many other of his contemporaries, he believed that the world is fundamentally <strong> deterministic</strong> meaning that we can ultimately trace the past of a system and further predict its future. Hence he propsed the theory of "Laplace's Demon" which suggested that if one knows the precise location and momentum of every atom in the universe, the past and future events can be known by prediction.</p>
+							
+						
+							<p class="lead">Chaos Theory directly challenges the idea of determinism. Even though assuming that we can determine how each system behaves accurately. The small <strong> variation in initial conditions</strong> will dramatically affect the accuracy of the prediction due to the lurking <strong>nonlinearity</strong>.</p>
+							
+						  <h2>Nonlinearity</h2>
+							<p class = "lead">Even though we are able to predict behaviour of dynamical system somehow accurately by using differential equations, these chaotic dynamical system often exhibit non-linear behaviour. It means that a miniscule variation in the initial conditions of the system will lead to dramatically different results.</p>
+							<p>A double pendulum is a chaotic system as shown in the previous article. The following video/simulation will show that small differences in initial state of the system will gradually amplified into dramatic differences. Source: <a href="https://www.youtube.com/watch?v=d0Z8wLLPNE0">https://www.youtube.com/watch?v=d0Z8wLLPNE0</a></p>
+							<div class="embed-responsive embed-responsive-16by9">
+  									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d0Z8wLLPNE0?start=80&autoplay=1&loop=1&mute=1&playlist=d0Z8wLLPNE0;showinfo=0" allowfullscreen allow="autoplay"></iframe>
+							</div>
+						<div class = "row">
+						  <p style ="padding-top: 1.4%">We can see that even though these 12 double pendulums originally started from similar states. These 12 systems eventually exhibited dramatically different behaviour. No matter how accurately we attempt to measure the initial state of the system, inevitable measurement inaccuracies will eventually cause the model to be inaccurate in its prediction due to <strong> nonlinearity</strong>.</p>
+						</div>
+							<div class="row justify-content-md-center">
+								<div class="embed-responsive embed-responsive-16by9">
+								<video controls autoplay loop>
+  								
+ 								<source src="Images/Double_pendulum_simultaneous_realisations.ogv" type="video/ogg">
+								Your browser does not support the video tag.
+								</video>
+									</div>	
+							</div>
+								<div class="row">
+									<p style ="padding-top: 1.4%"> Another example of six double pendulums starting from similar states and it is apparent that from 30s onwards they don't resemble each other at all. Source: <a href="https://commons.wikimedia.org/w/index.php?title=File%3ADouble_pendulum_simultaneous_realisations.ogv">https://commons.wikimedia.org/w/index.php?title=File%3ADouble_pendulum_simultaneous_realisations.ogv</a></p>
+								</div>
+							
+							<div class="row justify-content-md-center">
+								<div class="col col-lg-4">
+								<figure class="figure mt-2">
+                                		<img src="Images/18636_edward_norton_lorenz.jpg" class="img-fluid" alt="Phase Space of a Simple Harmonic Pendulum">
+								</figure>
+								</div>
+								<div class="col col-lg-6">
+								<figure class="figure mt-2">
+                                		<img src="Images/wP5T9.jpg" class="img-fluid" alt="Phase Space of a Simple Harmonic Pendulum">
+								</figure>
+								</div>
+							</div>
+						  <p class="lead">In 1961, when Edward Lorenz was attempting to devise weather prediction model, he was the first to notice the patterns of nonlinearity change when he proposed a system of differential equations (<a href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz System</a>) to model atmospheric convection. $$\eqalign{& {{dx} \over {dt}} = \sigma (y - x)  \cr & {{dy} \over {dt}} = x(\rho  - z) - y  \cr & {{dz} \over {dt}} = xy - \beta z \cr} $$</p>
+							<p> σ, ρ and β represents the Prandtl number, Rayleigh number, and certain physical dimensions of the layer itself <a href="https://en.wikipedia.org/wiki/Chaos_theory">(Wikipedia)</a>. However, it is more widely applicable to model behaviour of lasers, DC motors, chemical reactions, etc. Its "mathematical properties" far more interesting than what the exact meaning of each parameter is.</p>
+						  <p>When Lorenz first tried to solve the system of differential equations, he tried to plot its various solutions using an analogue computer Royal McBee LGP-30 (digital computers were a rarities back then). He once stopped a simulation halfway and to save time he resumed it by manually reinputing the data the print-out data 0.506 which is rounded to 3-digits instead of the actual mid-way value 0.506127. To his surprise, the result is dramatically different from what is expected.</p>
+							<div class="row justify-content-md-center">
+								
+								<div class="col col-lg-9 ">
+								<figure class="figure mt-4">
+                                		<img src="Images/big-datascientificmethod-36-638.jpg" class="img-fluid" alt="Phase Space of a Simple Harmonic Pendulum">
+								</figure>
+								</div>
+							</div>
+							<p>The above excerpt was how Edward Lorenz initially spotted the nonlinearity patterns.</p>
+							<p> Here is a modern simulation of nonlinearity: <i>(Source: <a href="https://www.youtube.com/watch?v=97ryBYOTQ0o">https://www.youtube.com/watch?v=97ryBYOTQ0o</a>)</i></p>
+							<div class="embed-responsive embed-responsive-16by9">
+  									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/97ryBYOTQ0o?autoplay=1&loop=1&playlist=97ryBYOTQ0o" allowfullscreen allow="autoplay"></iframe>
+							</div>
+							<p> </p>
+							<p class="lead"> The <span style="color:rgba(82,191,191,1.00)">blue</span> and <span style="color:rgba(245,233,19,1.00)">yellow</span> points were initially extremely similar states but over time they ended at completely different branches.</p>
+							<p>Hence, there is the term "the Butterfly Effect". A small variation in the conditions of the weather such as the flapping of the wings of a butterfly can potentially lead to unexpected dramatic changes further away (in Lorenz's original analogy the change is formation of a tornado). Even though Lorenz's model is said to be a toy model, it exposes the vulnerability of a making predictions using a nonlinear deterministic system - <strong>chaos</strong>. </p>
+							<p>In a 1963 paper, Lorenz essentially concluded that "the systems in that model could only be predicted up to a specific point in the future, and beyond that, reducing the error in the initial conditions would not increase the predictability". Hence a chaotic deterministic system could be "observationally indistinguishable" from a probabilistic system. (<a href="https://en.wikipedia.org/wiki/Butterfly_effect">Source</a>)</p>
+							<p class="lead">Chaos Theory hence contributed to the demise of Laplace's Demon by arguing that deterministic systems are practically Not "Chaotic" Chaos. Hence, we cannot know for 100% whether it is going to rain tomorrow, whereas we just assign a probability of precipitation.</p>
+							<h3>Further Research</h3>
+							<p><a href="https://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453">James Gleick, Chaos: Making a New Science, New York: Viking, 1987. 368 pp.</a></p>
+							<p><a href="https://en.wikipedia.org/wiki/Nonlinear_system">https://en.wikipedia.org/wiki/Nonlinear_system</a></p>
+							<div class="embed-responsive embed-responsive-16by9">
+  									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OaDoU4FTjbM?loop=1&playlist=OaDoU4FTjbM&amp;showinfo=0" allowfullscreen allow="autoplay"></iframe>
+								</div>
+                            <hr class="my-4">
+                          <h3 class="sr-only">Tags</h3>
+                            <a href="index.html" class="btn btn-sm btn-outline-dark mr-2 mb-3">Home</a>
+							<a href="What is Chaos.html" class="btn btn-sm btn-outline-dark mr-2 mb-3">Previous: What is Chaos?</a>
+                            <a href="Not Chaotic Chaos.html" class="btn btn-sm btn-outline-dark mb-3">Next: Not Chaotic Chaos</a>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+
+<script src="js/theme.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CFira+Sans:300,400,400i,600" rel="stylesheet">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="focus-theme/dist/css/theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default"></script>
+    <title>What is Chaos?</title>
+</head>
+
+<body>
+
+    <header class="site-header  bg-black border-bottom border-dark">
+        <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
+        <div class="container">
+
+            <!-- Navbar -->
+            <nav class="navbar main-nav navbar-expand-lg navbar-dark" aria-label="Main navigation"><a href="index.html" class="navbar-brand d-inline-flex text-uppercase">CHAOS<em class="material-icons ml-2" aria-hidden="true">donut_large</em></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <<div class="collapse navbar-collapse text-uppercase" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="What is Chaos.html" class="nav-link">What is Chaos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Determinism.html" class="nav-link">Determinism?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Not Chaotic Chaos.html" class="nav-link">Not Chaotic Chaos</a>
+                        </li>
+                    </ul>
+                </div>
+			</nav>
+			
+        </div>
+				
+    </header>
+
+    <main id="content">
+
+        <!-- Article -->
+        <div class="container py-6">
+			
+            <div class="">
+                <div class="col-lg-8">
+                  <h1>What is Chaos?</h1>
+                  <hr class="border-1 border-light my-4 ml-0 text-left w-15" role="presentation">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-black">
+            <div class="container py-3">
+                <div class="bg-white mt-n6 px-4 px-lg-0">
+                    <div class="row justify-content-center py-4 py-lg-5">
+                        <div class="col-md-12 col-lg-11">
+                          <p>Chaos by definition means "complete disorder and confusion". Or it is understood as the unpredictability of future events according to Edward Lorenz, who laid the foundation for the study of chaos in his 1963 paper<em> "Deterministic Nonperiodic Flow". </em></p>
+						  <blockquote class="blockquote my-4">
+                            <p class="font-italic">Chaos: When the present determines the future, but the approximate present does not approximately determine the future.</p>
+                              <footer class="blockquote-footer"> Edward Lorenz</footer>
+                          </blockquote>
+							<p class="lead">Lorenz's comment somehow shows that "chaos",which is a change in the future, is related to the current state.</p>
+							<p>Hence, the following will attempt to give a general overview on how chaos lurks across various unexpected fields which relies heavily on implementing differential equations</p>
+						  <h2>Pendulum? Simple Harmonic Oscillator?</h2>
+							<div class="row">
+    							<div class="col-sm">
+      								<figure class="figure mt-2">
+                             			<img src="Images/Pendulum Gif/Pendulum_45deg.gif" class="img-fluid" alt="Phase Space of a dampled Pendulum">
+									</figure>
+    							</div>
+   							 	<div class="col-sm">
+      								<figure class="figure mt-2">
+                             		<img src="Images/Pendulum Gif/Pendulum_90deg.gif" class="img-fluid" alt="Phase Space of a dampled Pendulum">
+									</figure>
+    							</div>
+								<div class="col-sm">
+      								<figure class="figure mt-2">
+                             		<img src="Images/Pendulum Gif/Pendulum_135deg.gif" class="img-fluid" alt="Phase Space of a dampled Pendulum">
+									</figure>
+    							</div>
+								<div class="col-sm">
+      								<figure class="figure mt-2">
+                             		<img src="Images/Pendulum Gif/Pendulum_170deg.gif" class="img-fluid" alt="Phase Space of a dampled Pendulum">
+									</figure>
+    							</div>
+    							
+  							</div>
+						  <p>In Physics, we prefer to overlook certain details in the certain relationship between different variables. We often use differential equations to describe the such relationship. Differential equations focus on how the change of one variable would correspond to the value of the differentials of the other variable and itself. For instance, in a pendulum, it is theorised that&nbsp;$${{{d^2}\theta } \over {d{t^2}}} + {g \over l}\sin \theta = 0$$ (the magnitude of angular acceleration is proportional to the sine of the angle).</p>
+						  <p> Many of us are being told to simplify the term sine of θ as simply θ itself. Thus, the equation becomes $${{{d^2}\theta } \over {d{t^2}}} + {g \over l}\theta  = 0$$ </p>
+							<p>However, there is an apparent difference in the two models due to the simplification. The difference can be notably illustrated in using a <strong>phase space </strong>of the two pendulum (one only using θ and the other using sine of θ). A phase space usually illustrates variants of positions and momentum of a system. It is not a "real" space but its existence still helps us to grasp and study the state of a particular system. The concept of phase space will turn out to be extremely useful in Chaos Theory.</p>
+							<figure class="figure mt-2">
+                                <img src="Images/2880px-Pendulum_phase_portrait_illustration.svg.png" class="img-fluid" alt="Phase Space of a Simple Harmonic Pendulum">
+                            <figcaption class="figure-caption p-2 text-center">This is a Simple Harmonic Oscillator (Pendulum) without damping which overlooks the sine operator. Source: <a href="https://en.wikipedia.org/wiki/Pendulum_(mathematics)">https://en.wikipedia.org/wiki/Pendulum_(mathematics)</a><br>
+                            </figcaption>
+                            <p> In this case, the angular displacement term θ is plotted on the x-axis and the angular velocity ω is plotted on the y-axis. Initially, positive θ would drive the pendulum back to the equilibrium (because of the negative angualr acceleration which satisfies the differential equation) (from <span style="color: rgb(243,169, 59)"> Yellow</span> to <span style="color: rgb(0, 33,244)">Blue</span>). As θ approaches the equilibirium position, it would have acculmated enough angular momentum and hence angular velocity to keep displacing in the opposite direction until the pendulum reaches the negative of the maximum angular displacement (from <span style="color: rgb(0, 33,244)">blue</span> to <span style="color: rgba(254,1,1,1.00)">red</span> ). Vice versa from <span style="color: rgba(254,1,1,1.00)">red</span> to <span style="color: rgba(1,129,0,1.00)">green</span> where the angular displacement is becoming less negative and reaching the same initial angle from <span style="color: rgba(1,129,0,1.00)">green</span> to <span style="color: rgb(243,169, 59)"> yellow</span>. In essence, the point which represents the state of the pendulum will keep going in a circular motion in the clockwise fashion. </p>
+							</figure>
+                          	<p> However, this (what is taught in Physics C) gives an oversimplified picture of how a pendulum would behave even if there is no friction. The following would be how a "real (using sine)" and ideal phase space would look like by plotting the differential equation in the phase space.</p>
+							<figure class="figure mt-2">
+                                <img src="Images/Heteroclinic_orbit_in_pendulum_phaseportrait.png" class="img-fluid" alt="Phase Space Modelled by the Differential Equation">
+                            <figcaption class="figure-caption p-2 text-center">The Phase Space which models after $${{{d^2}\theta } \over {d{t^2}}} + {g \over l}\sin \theta = 0$$ without damping . Source: <a href="https://commons.wikimedia.org/wiki/File:Heteroclinic_orbit_in_pendulum_phaseportrait.png">https://commons.wikimedia.org/wiki/File:Heteroclinic_orbit_in_pendulum_phaseportrait.png</a>
+                            </figcaption>
+							</figure>
+							<p>Still this is <strong>not</strong> the most accurate way to describe the motion of a pendulum (for instance, we have yet to incorporate damping and friction). Some "more accurate" phase space would look like:</p>
+							<div class="row">
+    							<div class="col-sm">
+      								<figure class="figure mt-2">
+                             			<img src="Images/damped-pendulum-phase-space.gif" class="img-fluid" alt="Phase Space of a dampled Pendulum">
+									</figure>
+    							</div>
+   							 	<div class="col-sm">
+      								<figure class="figure mt-2">
+                             <img src="Images/damped-oscillator-phase-example.png" class="img-fluid" alt="Phase Space of a dampled Pendulum">
+                            
+							</figure>
+    							</div>
+    							
+  							</div>
+								
+								<figcaption class="figure-caption p-2 text-center">Phase Space of a Pendulum with damping Source: <a href="http://www.entropy.energy/scholar/node/dynamical-systems-maps">http://www.entropy.energy/scholar/node/dynamical-systems-maps</a><br></figcaption>
+							<p> Note that despite being closer to a real pendulum, the damping is often assumed to be a term which is proportional to the angular velocity term ω. However, is this really the "ultimate way" that we can incorporate friction into the differential equation? </p>
+							<figure class="figure mt-2">
+                             			<img src="Images/Pendulum Gif/Screenshot 2019-04-07 at 11.25.53 PM.png" class="img-fluid" alt="Differential Equation">
+									</figure>
+							<p>In fact, this phase space only considered the simplest form of friction and <a href="https://www.math.colostate.edu/~shipman/47/volume12009/bevivino.pdf" class="">there are far more chaotic types of friction </a> which could make the pendulum oscillate like the following:</p>
+							<div class="row">
+    							<div class="col-sm">
+      								<figure class="figure mt-2">
+                             			<img src="Images/Pendulum Gif/Screenshot 2019-04-08 at 12.08.55 AM.png" class="img-fluid" alt="Phase Space of a dampled Pendulum">
+									</figure>
+    							</div>
+   							 	
+    							<div class="col-sm">
+      								<figure class="figure mt-2">
+                             <img src="Images/Pendulum Gif/Screenshot 2019-04-08 at 12.09.28 AM.png" class="img-fluid" alt="Phase Space of a dampled Pendulum">
+                            
+							</figure>
+    							</div>
+  							</div>
+							<h3> Therefore, it is even more "terrifying" to attempt predicting a <strong>double/triple pendulum system</strong> which manifests the idea of unpredictability of the future state of the system.</h3>
+							
+  								<div class="embed-responsive embed-responsive-16by9">
+  									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/InBBFF0j040?autoplay=1&controls=0&loop=1&&mute=1;showinfo=0" allowfullscreen allow="autoplay"></iframe>
+								</div>
+								<div class="embed-responsive embed-responsive-16by9">
+  									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dDU2JsgLpm4?autoplay=1&controls=0&loop=1&&mute=1;showinfo=0" allowfullscreen allow="autoplay"></iframe>
+								</div>
+							
+							<p class="lead">Nevertheless, all of these phases and models
+								are trying to solve one fundamental problem: how to describe a <strong>Dynamical System</strong>. In reality, even though we have various differential equations, there is always something that is being overlooked whether it is friction, air drag, heat created by the swinging rope, etc. Many of these factors are <strong> chaotic</strong>.</p>
+							<p class="lead">Using differential equations is only one step to approximate the reality. However, the concept of approximation is fundamentally "flawed" as the element of <strong>non-linearity</strong>.</p>
+							<h3>Further Reading</h3>
+							<p><a href="http://www.entropy.energy/scholar/node/dynamical-systems-maps">http://www.entropy.energy/scholar/node/dynamical-systems-maps</a></p>
+							<p><a href="https://aapt.scitation.org/doi/abs/10.1119/1.2343491?journalCode=pte">https://aapt.scitation.org/doi/abs/10.1119/1.2343491?journalCode=pte</a></p>
+							<div class="embed-responsive embed-responsive-16by9">
+  									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p_di4Zn4wz4?loop=1;showinfo=0" allowfullscreen allow="autoplay"></iframe>
+								</div>
+                            <hr class="my-4">
+                          <h3 class="sr-only">Tags</h3>
+                            <a href="index.html" class="btn btn-sm btn-outline-dark mr-2 mb-3">Home</a>
+                            <a href="Determinism.html" class="btn btn-sm btn-outline-dark mb-3">Next: Determinism?</a>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+   
+
+<script src="js/theme.min.js"></script>
+</body>
+</html>
